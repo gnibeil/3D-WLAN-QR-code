@@ -21,12 +21,15 @@ Generate a 3D representation of a QR code of a WLAN and also written on in human
    * font
 
 ## Requirements 
-   * solidPYTHON
-   * Pillow
-   * numpy 
-   * pyqrcode 
+   * [solidPython](https://github.com/SolidCode/SolidPython)
+   * [Pillow](https://pillow.readthedocs.io/en/stable/)
+   * [numpy](https://numpy.org/)
+   * [pyqrcode](https://pyqrcode.readthedocs.io/en/latest/)
 
 ## The result of the code is a SCAD file. 
 
 * This can be processed with openSCAD to an stl file.
 * It can be included as an opject in an FreeCAD project.
+
+## Outline
+* update to solidPython2

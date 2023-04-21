@@ -1,0 +1,4 @@
+solidpython2~=2.0.1
+numpy~=1.24.2
+pillow~=9.4.0
+pyqrcode~=1.2.1

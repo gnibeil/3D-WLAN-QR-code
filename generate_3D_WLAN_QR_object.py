@@ -12,7 +12,7 @@ Some hints can be found under the following link:
 import pyqrcode as pq
 import numpy as np
 # actually the python package is not called solid but solidpython
-from solid import *
+from solid2 import *
 from PIL import ImageFont
 
 def create_wifi_qr(ssid: str, security: str, password: str):
@@ -25,8 +25,8 @@ def create_wifi_qr(ssid: str, security: str, password: str):
    Output
       qr   .... image of the QR code   
    '''
-    qr = pq.create(f'WIFI:S:{ssid};T:{security};P:{password};;')
-    return qr
+   qr = pq.create(f'WIFI:S:{ssid};T:{security};P:{password};;')
+   return qr
 
 
 #With that, we can create an array version of our QR code above:
@@ -38,11 +38,11 @@ def qr2array(qr):
    Output
       arr  ... numpy array
    '''
-    arr = []
-    for line in qr.text().split('\n'):
-        if len(line) != 0:
-            arr.append([int(bit) for bit in line])
-    return np.vstack(arr)
+   arr = []
+   for line in qr.text().split('\n'):
+      if len(line) != 0:
+         arr.append([int(bit) for bit in line])
+   return np.vstack(arr)
 
 # define the parameters
 # all are given as keyword argument
